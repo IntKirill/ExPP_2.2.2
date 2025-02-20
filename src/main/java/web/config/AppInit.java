@@ -16,6 +16,7 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     protected Class<?>[] getServletConfigClasses() {
         return new Class<?>[]{
                 WebConfig.class
+                        //Указываем класс в котором содержится конфигурация
         };
     }
 
@@ -25,5 +26,5 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
-
+    //Все запросы посылаем на ДиспетчерСервлет
 }
